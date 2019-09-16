@@ -150,3 +150,9 @@ CREATE TABLE `cb_order`(
 		`product_id` INT(11) NOT NULL COMMENT '商品外键',
 		PRIMARY KEY (`theme_id`, `product_id`)
 	)  ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COMMENT ='主题所包含的商品';
+	
+# 主题的数据插入
+-- 1、创建主题，先上传图片，拿到主题图、主题列表页头图id和主题所需信息创建专题
+-- 2、添加商品，添加成功后获取product_id和选择专题进行绑定
+-- 3、数据的更新（商品更改主题), 需要拿旧theme_id和product_id查询是否已经存在该条数据，查出则该，没有则插入
+-- 4、删除商品和专题的关联，通过product_id进行删除即可
