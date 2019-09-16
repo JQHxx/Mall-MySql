@@ -22,7 +22,7 @@ char(n)和varchar(n)超出n的范围时,会截取前面n个字符
 - 5、decimal(8,2) 金额保留小数位
 - 6、int(3) 表示如果不满3位，会在前面补0
 - 7、int(10) unsigned 表示正整数
-- 8、数据的标志删除 `delete_time`  INT(11) DEFAULT NULL,
+- 8、数据的标志删除  `is_delete` TINYINT(4) NOT NULL DEFAULT '0'  不要用邪门功法 `delete_time`  INT(11) DEFAULT NULL,
 - 9、DEFAULT CHARSET = utf8mb4; 数据表的编码（可以处理表情）
 
 - 高性能可拓展MySql
