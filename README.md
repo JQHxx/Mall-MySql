@@ -1,7 +1,7 @@
 # Mall-MySql
 数据库
 
-1、varchar 和 char 区别？
+- 1、varchar 和 char 区别？
 ```
 非空CHAR的最大总长度是255【字节】;非空VARCHAR的最大总长度是65533【字节】。
 可空CHAR的最大总长度是254【字节】;可空VARCHAR的最大总长度是65532【字节】。
@@ -16,14 +16,14 @@ char的存取数度还是要比varchar要快得多，因为其长度固定，方
 char(n)和varchar(n)超出n的范围时,会截取前面n个字符
 ```
 
-2、tinyint(4) 常见于枚举和bool
-3、如果涉及到金额变动，需要设置金额变动日志表
-4、tinyint（1个字节 2的8次方减1）、smallint（2字节）、int（4字节）、bigint（8字节）
-5、decimal(8,2) 金额保留小数位
-6、int(3) 表示如果不满3位，会在前面补0
-7、int(10) unsigned 表示正整数
-8、数据的标志删除 `delete_time`  INT(11) DEFAULT NULL,
-9、DEFAULT CHARSET = utf8mb4; 数据表的编码（可以处理表情）
+- 2、tinyint(4) 常见于枚举和bool
+- 3、如果涉及到金额变动，需要设置金额变动日志表
+- 4、tinyint（1个字节 2的8次方减1）、smallint（2字节）、int（4字节）、bigint（8字节）
+- 5、decimal(8,2) 金额保留小数位
+- 6、int(3) 表示如果不满3位，会在前面补0
+- 7、int(10) unsigned 表示正整数
+- 8、数据的标志删除 `delete_time`  INT(11) DEFAULT NULL,
+- 9、DEFAULT CHARSET = utf8mb4; 数据表的编码（可以处理表情）
 
 - 高性能可拓展MySql
 - MySQL提升课程 全面讲解MySQL架构设计
